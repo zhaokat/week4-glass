@@ -1,0 +1,56 @@
+/*color*/
+$primary: #AA0601;
+$secondary-light: #FBF2F2;
+$secondary-dark: #650300;
+
+$white: #fff;
+$black: #000;
+$gray-200: #F2F2F2;
+$gray-300: #DEE2E6; 
+$gray-400: #CED4DA;
+$gray-600: #707070;
+$gray-700: #555555;
+$gray-800: #373A3C;
+$gray-900: #212529;
+
+$brown: #5F3E2D;
+$orange: #B75929;
+
+/*font*/
+$font-size-base: 16px;
+
+$fz-8xl: $font-size-base*4.5;    //72px
+$fz-7xl: $font-size-base*4;      //64px
+$fz-6xl: $font-size-base*3;      //48px
+$fz-5xl: $font-size-base*2.625;  //42px
+$fz-4xl: $font-size-base*2.25;   //36px
+$fz-3xl: $font-size-base*2;      //32px
+$fz-2xl: $font-size-base*1.5;    //24px
+$fz-xl: $font-size-base*1.25;    //20px
+$fz-lg: $font-size-base*1.125;   //18px
+$fz-base: $font-size-base;
+$fz-sm: $font-size-base*0.875;   //14px
+
+/*space*/
+$space-base: 8px;
+
+$space-1: $space-base*0.5;    //4px
+$space-2: $space-base;        //8px
+$space-3: $space-base*1.25;   //10px
+$space-4: $space-base*1.5;    //12px
+$space-5: $space-base*2;      //16px
+$space-6: $space-base*2.5;    //20px
+$space-7: $space-base*3;      //24px
+$space-8: $space-base*3.75;   //30px
+$space-9: $space-base*4;      //32px
+$space-10: $space-base*5;     //40px
+$space-11: $space-base*6.5;   //52px
+$space-12: $space-base*7;     //56px
+$space-13: $space-base*7.5;   //60px
+$space-14: $space-base*8;     //64px
+$space-15: $space-base*9;     //72px
+$space-16: $space-base*9.5;   //76px
+$space-17: $space-base*10;    //80px
+$space-18: $space-base*11;    //88px
+$space-19: $space-base*12;    //96px
+$space-20: $space-base*13;    //104px

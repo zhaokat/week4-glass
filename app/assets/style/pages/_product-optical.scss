@@ -1,0 +1,199 @@
+/*product menu*/
+.product-menu-item{
+    width: calc(100% / 3);
+    border-left: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    a{ 
+        padding: 24px 0 16px;
+        border-bottom: 8px solid transparent;
+        &:hover{
+            border-bottom: 8px solid $primary;
+        }
+        span{
+            font-size: $fz-6xl;
+        }
+        P{
+            font-size: $fz-3xl; 
+        }
+    }
+    .active{
+        border-bottom: 8px solid $primary; 
+    }
+}
+
+@include pad(){
+    .product-menu-item{
+        a{
+            padding: 16px 0 8px;
+            span{
+                font-size: $fz-3xl;
+            }
+            p{
+                font-size: $fz-2xl;
+            }
+        }
+    }
+}
+
+@include mobile(){
+    .product-menu-item{
+        a{
+            padding: 8px 0 4px;
+            border-bottom: 4px solid transparent;
+            &:hover{
+                border-bottom: 4px solid $primary;
+            }
+            span{
+                font-size: $fz-base;
+                margin-right: 2px;
+            }
+            p{
+                font-size: $fz-sm;
+            }
+        }
+        
+        .active{
+            border-bottom: 4px solid $primary; 
+        }
+    }
+}
+
+
+/*product optical*/
+.product-op{
+    &-banner{
+        img{
+            width: 50%;
+            height: 304px;
+            object-fit: cover;
+        }
+    }
+    &-title{
+        span{
+            font-size: $fz-5xl;
+        }
+        p{
+            font-size: $fz-3xl;
+        }
+    }
+    &-item{
+        width: calc((100% - (30px * 3)) / 4);
+        margin-bottom: 104px;
+        img{
+            width: 100%;
+            height: 164px;
+            object-fit: cover;
+        }
+    }
+    &-text{
+        font-size: $fz-2xl;
+    }
+    &-color{
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+}
+
+@include pad(){
+    .product-op{
+        &-title{
+            span{
+                font-size: $fz-3xl;
+            }
+            p{
+                font-size: $fz-2xl;
+            }
+        }
+        &-item{
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 72px;
+        }
+    }
+}
+
+@include mobile(){
+    .product-op{
+        &-banner{
+            img{
+                height: 148px;
+            }
+        }
+        &-title{
+            span{
+                font-size: $fz-xl;
+            }
+            p{
+                font-size: $fz-base;
+            }
+        }
+        &-item{
+            width: 100%;
+            margin-bottom: 32px;
+            img{
+                height: 166px;
+            }
+        }
+        &-text{
+            font-size: $fz-base;
+        }
+        &-color{
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
+
+/*pagination*/
+.pagination{
+    margin-bottom: 160px;
+    &-list{
+        font-size: $fz-lg;
+    }
+    &-change{
+        padding: 12px 16px;
+        border: 1px solid $gray-700;
+        background: $gray-200;
+        color: $gray-700;
+        &:hover{
+            background: $black;
+            color: $white;
+        }
+    }
+    &-number{
+        padding: 12px 16px;
+        border: 1px solid $gray-700;
+        color: $gray-700;
+        &:hover{
+            background: $black;
+            color: $white;
+        }
+    }
+    .active{
+        background: $black;
+        color: $white;
+    }
+}
+
+@include pad(){
+    .pagination{
+        margin-bottom: 96px;
+    }
+}
+
+@include mobile(){
+    .pagination{
+        margin-bottom: 56px;
+        &-list{
+            font-size: $fz-base;
+        }
+        &-change{
+            padding: 12px;
+        }
+        &-number{
+            padding: 12px;
+        }
+    }
+}

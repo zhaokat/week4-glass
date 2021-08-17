@@ -1,0 +1,37 @@
+/*faq*/
+.faq{
+    padding: 96px 0 160px;
+    &-type{
+        font-size: $fz-3xl;
+        margin-bottom: 36px;
+    }
+    &-question{
+        font-size: $fz-xl;
+    }
+    &-answer{
+        margin: 0 8.55%;
+    }
+    @include pad(){
+        padding: 60px 0 96px;
+        &-type{
+            margin-bottom: 32px;
+        }
+        &-answer{
+            margin: 0 0 0 8.7%;
+        }
+    }
+    @include mobile(){
+        padding: 28px 0 56px;
+        &-type{
+            font-size: $fz-xl;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        &-question{
+            font-size: $fz-base;
+        }
+        &-answer{
+            font-size: $fz-sm;
+        }
+    }
+}
